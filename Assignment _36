@@ -1,1 +1,160 @@
+#adding two numbers
+>>> num1=int(input("enter the first number"))
+enter the first number10
+>>> num2=int(input("enter the second number"))
+enter the second number65
+>>> add=num1+num2
+>>> print("adding the two numbers:",add)
+adding the two numbers: 75
 
+#program to demonstates relational operators
+>>> x=10
+>>> y=20
+>>> print(x<y)
+True
+>>> print("x>Y:",(x>y))
+x>Y: False
+>>> print("x==y:",(x==y))
+x==y: False
+>>> print("x!=y:",(x!=y))
+x!=y: True
+>>> print("x>=y:",(x>=y))
+x>=y: False
+>>> print("x<=y:",(x<=y))
+x<=y: True
+
+#program to calculate area and circumference of a circle
+>>> radius=float(input("enter the radius of the circle:"))
+enter the radius of the circle:7
+>>> area=3.14*radius*radius
+>>> print("area of a circle:",area)
+area of a circle: 153.86
+>>> circumference=2*3.14*radius
+>>> print("circumference of a circle:",circumference)
+circumference of a circle: 43.96
+
+#program to calculate average of two numbers and their deviations
+num1=int(input("enter the two numbers:"))
+enter the two numbers:7
+num2=int(input("enter the two numbers:"))
+enter the two numbers:10
+avg=(num1+num2)/2
+dev1=num1-avg
+dev2=num2-avg
+print("average:",avg)
+average: 8.5
+print("deviation of first number=",dev1)
+deviation of first number= -1.5
+print("deviation of second number=",dev2)
+deviation of second number= 1.5
+
+#program to find given year is a leap year or not
+year=int(input("enter a year"))
+enter a year2012
+if(year%4==0):
+    print("leap year")
+else:
+    print("not a leap year")
+output:
+leap year
+
+#program to find the greatest number from the given three numbers
+num1=int(input("enter the first number:"))
+enter the first number:13
+num2=int(input("enter the second number:"))
+enter the second number:43
+num3=int(input("enter the third number:"))
+enter the third number:25
+if(num1>num2):
+    if(num1>num3):
+        print(num1,"is greater than",num2,"and",num3)
+    else:
+        print(num3,"is greater than",num1,"and",num2)
+elif(num2>num3):
+    print(num2,"is greater than",num1,"and",num3)
+else:
+    print("the three numbers are equal")
+OUTPUT:   
+43 is greater than 13 and 25
+
+#program to find the roots of a quadratic equation
+a=int(input("enter the value of a:"))
+enter the value of a:3
+b=int(input("enter the value of b:"))
+enter the value of b:4
+c=int(input("enter the value of c:"))
+enter the value of c:5
+D=(b*b)-(4*a*c)
+denominator=2*a
+if(D>0):
+    print("REALROOTD")
+    root1=(-b+D**0.5)/denominator
+    root2=(-b+D**0.5)/denominator
+    print("root1=",root1,+"\root2=",root2)
+elif(D==0):
+    print("EQUAL ROOTS")
+    root1=-b/denominator
+    print("root1 and root2=",root1)
+else:
+    print("IMAGINARY ROOTS")
+OUTPUT:
+IMAGINARY ROOTS
+
+#program to demonstrate the slice operations used to access the elements of the list
+num_list=[1,2,3,4,5,6,7,8,9,10]
+print("num_list is:",num_list)
+num_list is: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("first element in the list is",num_list[0])
+first element in the list is 1
+print("num_list[2:5]=",num_list[2:5])
+num_list[2:5]= [3, 4, 5]
+print("num_list[::2]=",num_list[::2])
+num_list[::2]= [1, 3, 5, 7, 9]
+print("num_list[1::3]=",num_list[1::3])
+num_list[1::3]= [2, 5, 8]
+print("num_list[2:10:5}=",num_list[2:10:5])
+num_list[2:10:5}= [3, 8]
+
+#program to read the list of numbers and reverse of the list
+num_list=[]
+m=int(input("enter the starting of range:"))
+enter the starting of range:2
+n=int(input("enter the ending of range:"))
+enter the ending of range:30
+>>> p=int(input("enter the steps in range:"))
+enter the steps in range:3
+>>> for i in range(m,n,p):
+...     num_list.append()
+>>> print("original list:",num_list)
+original list: [2,5,8,11,14,17,20,23,26,29]
+>>> num_list.reverse()
+>>> print("reversed list:",num_list)
+reversed list: [29,26,23,20,17,14,11,8,5,2]
+
+#program to calculate the total amount in piggy bank  of Rs10,Rs5,Rs2,Re1
+>>> num_of_10_coins=int(input("enter the no of 10Rs coins in the piggybank:"))
+enter the no of 10Rs coins in the piggybank:6
+>>> num_of_5_coins=int(input("enter the no of 5Rs coins in the piggybank:"))
+enter the no of 5Rs coins in the piggybank:10
+>>> num_of_2_coins=int(input("enter the no of 2Rs coins in the piggybank:"))
+enter the no of 2Rs coins in the piggybank:15
+>>> num_of_1_coins=int(input("enter the no of 1Re coins in the piggybank:"))
+enter the no of 1Re coins in the piggybank:20
+>>> total_amt=num_of_10_coins*10+num_of_5_coins*5+num_of_2_coins*2+num_of_1_coins
+>>> print("totalamount in the piggybank:",total_amt)
+totalamount in the piggybank: 160
+
+#program to conert degrees farenheit to dergrees celsius
+>>> farenheit=float(input("enter the temperature in farenheit:"))
+enter the temperature in farenheit:104.3
+>>> celsius=(0.56)*(farenheit-32)
+>>> print("temperature in degree celsius:",celsius)
+temperature in degree celsius: 40.488
+
+#program to print 20 horizontal*
+>>> i=1
+>>> while(i<20):
+...     print("*",end="")
+...     i=i+1
+... output:
+*******************
