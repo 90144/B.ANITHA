@@ -1,0 +1,13 @@
+CREATE TABLE employees111 ( emp_id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50), department VARCHAR(50), salary INT, age INT );
+use employees111;
+SELECT * FROM employees111 ORDER BY salary ASC;
+SELECT * FROM employees111 ORDER BY salary DESC;
+SELECT * FROM employees111 ORDER BY department ASC, salary DESC;
+SELECT name, salary FROM employees111 ORDER BY 2 DESC;
+SELECT name, salary * 12 AS annual_salary FROM employees111 ORDER BY annual_salary DESC;
+SELECT * FROM employees111 WHERE department = 'IT' ORDER BY salary DESC;
+SELECT * FROM employees111 WHERE age > 30 ORDER BY age ASC;
+CREATE INDEX idx_department ON employees111(department);
+CREATE INDEX idx_salary ON employees111(salary);
+CREATE INDEX idx_dept_salary ON employees111(department, salary);
+SELECT * FROM employees111 WHERE department = 'HR' ORDER BY salary DESC;
